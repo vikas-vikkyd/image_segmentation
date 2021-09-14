@@ -23,8 +23,7 @@ Encoder - Encoder has four encoder blocks, each encoder block consists of two Co
 Decoder- Decoder part of model consists of Conv2DTranspose to upsample the image followed by concatenate layer (skip connection) to overcome gradient vanishing problem and Dropout layer to overcome any overfitting problem.
 
 # Training
-Loss used binary cross entropy (we have just two class 0 and 1)
-Optimizer used Adam with learning rate 0.001 and trained for 50 epochs
+Optimized binary cross entropy (we have just two classes 0 and 1) using Adam with learning rate 0.001 and trained for 50 epochs.
 
 ![image](https://user-images.githubusercontent.com/29758488/133234145-ffcf4853-8702-482e-bf85-9e195b465b89.png)
 ![image](https://user-images.githubusercontent.com/29758488/133234264-da2d53a4-0b66-4b27-ab72-3e9c8ee5e7d8.png)
